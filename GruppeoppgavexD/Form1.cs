@@ -21,7 +21,12 @@ namespace GruppeoppgavexD
         {
             MessageBox.Show("xD");
             MessageBox.Show("Jeff");
+            SpmLoad();
         }
 
+        private void SpmLoad()
+        {
+
+        }
     }
 }
