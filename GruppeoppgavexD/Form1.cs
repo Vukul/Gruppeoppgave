@@ -20,7 +20,7 @@ namespace GruppeoppgavexD
         private void Form1_Load(object sender, EventArgs e)
         {
             MessageBox.Show("xD");
-            MessageBox.Show("Anemanema Jeff");
+            MessageBox.Show("Jeff");
         }
 
     }
