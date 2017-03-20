@@ -39,8 +39,11 @@ namespace GruppeoppgavexD
 
 
     }
+        // ØYØYvind
     private void RanSpm(int spm) { }
+        // Pablo McMagnux
     private void Count() { }
+        // ØYØYvind
     private void Check() { }
     private void radiobtns() { }
 
