@@ -19,6 +19,7 @@ namespace GruppeoppgavexD
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            ranNumber = newRan.Next(0, 41);
         }
         Random newRan = new Random();
         int ranNumber = 0;
@@ -29,7 +30,10 @@ namespace GruppeoppgavexD
                 , "Bulgaria", "Macedonia", "Montenegro", "Kosovo", "Albania", "Hellas", "Tyrkia", "Kypros", "Spania"
                 , "Portugal", "Italia", "Malta" };
 
-        private void LoadSpm(int spm) { }
+        private void LoadSpm(int spm) {
+            
+            
+        }
         private void RanSpm(int spm) { }
         private void Count() { }
         private void Check() { }
