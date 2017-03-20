@@ -19,16 +19,18 @@ namespace GruppeoppgavexD
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ranNumber = newRan.Next(0, 41);
+            ranNumber = newRan.Next(0, 39);
+            LoadSpm(ranNumber);
+            RanSpm(ranNumber);
         }
         Random newRan = new Random();
         int ranNumber = 0;
         string[] svar = { "Island", "Norge", "Sverige", "Finland", "Russland", "Irland", "Storritannia"
                 , "Danmark", "Litauen", "latvia", "Estland", "Belgia", "Nederland", "Luxemburg", "Tyskland"
                 , "Tjekkia", "Slovakia", "Polen", "Ukraina", "Hviterussland", "Frankrike", "Sveits", "Østerrike"
-                , "Slovakia", "Ungaren", "Slovenia", "Kroatia", "Bosnia-Hercegovina", "Serbia", "Romania", "Moldova"
-                , "Bulgaria", "Macedonia", "Montenegro", "Kosovo", "Albania", "Hellas", "Tyrkia", "Kypros", "Spania"
-                , "Portugal", "Italia", "Malta" };
+                , "Ungaren", "Slovenia", "Kroatia", "Bosnia-Hercegovina", "Serbia", "Romania", "Moldova"
+                , "Bulgaria", "Macedonia", "Montenegro", "Albania", "Hellas", "Tyrkia", "Kypros", "Spania"
+                , "Portugal", "Italia"};
 
         private void LoadSpm(int spm) {
             
