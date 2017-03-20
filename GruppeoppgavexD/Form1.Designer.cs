@@ -36,6 +36,7 @@
             this.Alt3 = new System.Windows.Forms.RadioButton();
             this.Neste = new System.Windows.Forms.Button();
             this.Sjekk = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Bildested)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +53,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.Sjekk);
             this.groupBox1.Controls.Add(this.Neste);
             this.groupBox1.Controls.Add(this.Alt3);
@@ -78,7 +80,8 @@
             // Alt1
             // 
             this.Alt1.AutoSize = true;
-            this.Alt1.Location = new System.Drawing.Point(63, 117);
+            this.Alt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Alt1.Location = new System.Drawing.Point(11, 103);
             this.Alt1.Name = "Alt1";
             this.Alt1.Size = new System.Drawing.Size(21, 20);
             this.Alt1.TabIndex = 1;
@@ -88,7 +91,8 @@
             // Alt2
             // 
             this.Alt2.AutoSize = true;
-            this.Alt2.Location = new System.Drawing.Point(63, 162);
+            this.Alt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Alt2.Location = new System.Drawing.Point(11, 147);
             this.Alt2.Name = "Alt2";
             this.Alt2.Size = new System.Drawing.Size(21, 20);
             this.Alt2.TabIndex = 2;
@@ -98,7 +102,8 @@
             // Alt3
             // 
             this.Alt3.AutoSize = true;
-            this.Alt3.Location = new System.Drawing.Point(63, 210);
+            this.Alt3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Alt3.Location = new System.Drawing.Point(11, 191);
             this.Alt3.Name = "Alt3";
             this.Alt3.Size = new System.Drawing.Size(21, 20);
             this.Alt3.TabIndex = 3;
@@ -124,6 +129,16 @@
             this.Sjekk.TabIndex = 5;
             this.Sjekk.Text = "Sjekk svar";
             this.Sjekk.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(215, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Hvilket land er dette?";
             // 
             // Form1
             // 
@@ -153,6 +168,7 @@
         private System.Windows.Forms.RadioButton Alt2;
         private System.Windows.Forms.RadioButton Alt1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
