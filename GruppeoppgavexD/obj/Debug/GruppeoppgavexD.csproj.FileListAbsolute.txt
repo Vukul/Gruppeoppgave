@@ -1,3 +1,13 @@
 c:\users\andreas\documents\visual studio 2015\Projects\GruppeoppgavexD\GruppeoppgavexD\bin\Debug\GruppeoppgavexD.exe.config
 C:\Users\Andreas\Desktop\Gruppeoppgave\GruppeoppgavexD\bin\Debug\GruppeoppgavexD.exe.config
 C:\Users\Eivind\Desktop\IT\Gruppeoppgave\GruppeoppgavexD\bin\Debug\GruppeoppgavexD.exe.config
+C:\Users\Eivind\Desktop\IT\Gruppeoppgave\GruppeoppgavexD\bin\Debug\GruppeoppgavexD.exe
+C:\Users\Eivind\Desktop\IT\Gruppeoppgave\GruppeoppgavexD\bin\Debug\GruppeoppgavexD.pdb
+C:\Users\Eivind\Desktop\IT\Gruppeoppgave\GruppeoppgavexD\obj\Debug\GruppeoppgavexD.csprojResolveAssemblyReference.cache
+C:\Users\Eivind\Desktop\IT\Gruppeoppgave\GruppeoppgavexD\obj\Debug\GruppeoppgavexD.Form1.resources
+C:\Users\Eivind\Desktop\IT\Gruppeoppgave\GruppeoppgavexD\obj\Debug\GruppeoppgavexD.Properties.Resources.resources
+C:\Users\Eivind\Desktop\IT\Gruppeoppgave\GruppeoppgavexD\obj\Debug\GruppeoppgavexD.csproj.GenerateResource.Cache
+C:\Users\Eivind\Desktop\IT\Gruppeoppgave\GruppeoppgavexD\obj\Debug\GruppeoppgavexD.exe
+C:\Users\Eivind\Desktop\IT\Gruppeoppgave\GruppeoppgavexD\obj\Debug\GruppeoppgavexD.pdb
+C:\Users\Andreas\Desktop\Gruppeoppgave\GruppeoppgavexD\obj\Debug\GruppeoppgavexD.exe
+C:\Users\Andreas\Desktop\Gruppeoppgave\GruppeoppgavexD\obj\Debug\GruppeoppgavexD.pdb
