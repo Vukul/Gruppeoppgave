@@ -18,7 +18,7 @@ namespace GruppeoppgavexD
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        { 
             ranNumber = newRan.Next(0, 41);
         }
         Random newRan = new Random();
