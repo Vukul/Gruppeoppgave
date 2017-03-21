@@ -30,13 +30,13 @@
         {
             this.Bildested = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Alt1 = new System.Windows.Forms.RadioButton();
-            this.Alt2 = new System.Windows.Forms.RadioButton();
-            this.Alt3 = new System.Windows.Forms.RadioButton();
-            this.Neste = new System.Windows.Forms.Button();
-            this.Sjekk = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.Sjekk = new System.Windows.Forms.Button();
+            this.Neste = new System.Windows.Forms.Button();
+            this.Alt3 = new System.Windows.Forms.RadioButton();
+            this.Alt2 = new System.Windows.Forms.RadioButton();
+            this.Alt1 = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Bildested)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -64,40 +64,38 @@
             this.groupBox1.Location = new System.Drawing.Point(816, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(432, 660);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Spørsmål 1";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(215, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Hvilket land er dette?";
             // 
-            // Alt1
+            // Sjekk
             // 
-            this.Alt1.AutoSize = true;
-            this.Alt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Alt1.Location = new System.Drawing.Point(11, 103);
-            this.Alt1.Name = "Alt1";
-            this.Alt1.Size = new System.Drawing.Size(21, 20);
-            this.Alt1.TabIndex = 1;
-            this.Alt1.TabStop = true;
-            this.Alt1.UseVisualStyleBackColor = true;
+            this.Sjekk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sjekk.Location = new System.Drawing.Point(108, 508);
+            this.Sjekk.Name = "Sjekk";
+            this.Sjekk.Size = new System.Drawing.Size(140, 49);
+            this.Sjekk.TabIndex = 5;
+            this.Sjekk.Text = "Sjekk svar";
+            this.Sjekk.UseVisualStyleBackColor = true;
             // 
-            // Alt2
+            // Neste
             // 
-            this.Alt2.AutoSize = true;
-            this.Alt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Alt2.Location = new System.Drawing.Point(11, 147);
-            this.Alt2.Name = "Alt2";
-            this.Alt2.Size = new System.Drawing.Size(21, 20);
-            this.Alt2.TabIndex = 2;
-            this.Alt2.TabStop = true;
-            this.Alt2.UseVisualStyleBackColor = true;
+            this.Neste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neste.Location = new System.Drawing.Point(108, 440);
+            this.Neste.Name = "Neste";
+            this.Neste.Size = new System.Drawing.Size(140, 49);
+            this.Neste.TabIndex = 1;
+            this.Neste.Text = "Neste";
+            this.Neste.UseVisualStyleBackColor = true;
             // 
             // Alt3
             // 
@@ -110,35 +108,37 @@
             this.Alt3.TabStop = true;
             this.Alt3.UseVisualStyleBackColor = true;
             // 
-            // Neste
+            // Alt2
             // 
-            this.Neste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Neste.Location = new System.Drawing.Point(108, 440);
-            this.Neste.Name = "Neste";
-            this.Neste.Size = new System.Drawing.Size(140, 49);
-            this.Neste.TabIndex = 4;
-            this.Neste.Text = "Neste";
-            this.Neste.UseVisualStyleBackColor = true;
+            this.Alt2.AutoSize = true;
+            this.Alt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Alt2.Location = new System.Drawing.Point(11, 147);
+            this.Alt2.Name = "Alt2";
+            this.Alt2.Size = new System.Drawing.Size(21, 20);
+            this.Alt2.TabIndex = 2;
+            this.Alt2.TabStop = true;
+            this.Alt2.UseVisualStyleBackColor = true;
             // 
-            // Sjekk
+            // Alt1
             // 
-            this.Sjekk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sjekk.Location = new System.Drawing.Point(108, 508);
-            this.Sjekk.Name = "Sjekk";
-            this.Sjekk.Size = new System.Drawing.Size(140, 49);
-            this.Sjekk.TabIndex = 5;
-            this.Sjekk.Text = "Sjekk svar";
-            this.Sjekk.UseVisualStyleBackColor = true;
+            this.Alt1.AutoSize = true;
+            this.Alt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Alt1.Location = new System.Drawing.Point(11, 103);
+            this.Alt1.Name = "Alt1";
+            this.Alt1.Size = new System.Drawing.Size(21, 20);
+            this.Alt1.TabIndex = 2;
+            this.Alt1.TabStop = true;
+            this.Alt1.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // label1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(215, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Hvilket land er dette?";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Spørsmål 1";
             // 
             // Form1
             // 
@@ -147,7 +147,7 @@
             this.ClientSize = new System.Drawing.Size(1248, 660);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Bildested);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

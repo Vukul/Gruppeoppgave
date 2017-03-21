@@ -63,7 +63,10 @@ namespace GruppeoppgavexD
 
 
         // Eivind
-        private void Check() { }
+        private void Check()
+        {
+           
+        }
 
         //Vu
         private void radiobtns()
