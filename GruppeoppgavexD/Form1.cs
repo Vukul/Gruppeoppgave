@@ -38,7 +38,7 @@ namespace GruppeoppgavexD
         private void LoadSpm(int spm) {
             Bildested.ImageLocation = Directory.GetCurrentDirectory() + @"\\Land\" + ranNumber + ".png";
             riktigSvar = svar[ranNumber];
-    }
+        }
 
         // Eivind
     private void RanSpm(int spm) { }
@@ -52,7 +52,32 @@ namespace GruppeoppgavexD
     private void Check() { }
 
         //Vu
-    private void radiobtns() { }
+    private void radiobtns() {
+            switch (newRan.Next(0, 2))
+            {
+                case 0:
+                    {
+                        Alt1.Text = riktigSvar;
+                        Alt2.Text = RanSpm1;
+                        Alt3.Text = RanSpm2;
+                        break;
+                    }
+                case 1:
+                    {
+                        Alt1.Text = RanSpm1;
+                        Alt2.Text = riktigSvar;
+                        Alt3.Text = RanSpm2;
+                        break;
+                    }
+                case 2:
+                    {
+                        Alt1.Text = RanSpm1;
+                        Alt2.Text = RanSpm2;
+                        Alt3.Text = riktigSvar;
+                        break;
+                    }
+            }
+        }
 
         //Pablo
         private void Neste_Click(object sender, EventArgs e)
