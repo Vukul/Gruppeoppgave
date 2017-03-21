@@ -39,9 +39,31 @@ namespace GruppeoppgavexD
             Bildested.ImageLocation = Directory.GetCurrentDirectory() + @"\\Land\" + ranNumber + ".png";
             riktigSvar = svar[ranNumber];
     }
-        private void RanSpm(int spm) { }
-        private void Count() { }
-        private void Check() { }
-        private void radiobtns() { }
+
+        // Eivind
+    private void RanSpm(int spm) { }
+
+
+        // Pablo 
+    private void Count() { }
+
+
+        // Eivind
+    private void Check() { }
+
+        //Vu
+    private void radiobtns() { }
+
+        //Pablo
+        private void Neste_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //Pablo
+        private void Sjekk_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
