@@ -35,17 +35,35 @@ namespace GruppeoppgavexD
                 , "Bulgaria", "Macedonia", "Montenegro", "Albania", "Hellas", "Tyrkia", "Kypros", "Spania"
                 , "Portugal", "Italia"};
 
+        //Vu
     private void LoadSpm(int spm) {
 
 
     }
-        // ØYØYvind
+        // Eivind
     private void RanSpm(int spm) { }
-        // Pablo McMagnux
+
+
+        // Pablo 
     private void Count() { }
-        // ØYØYvind
+
+
+        // Eivind
     private void Check() { }
+
+        //Vu
     private void radiobtns() { }
 
+        //Pablo
+        private void Neste_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //Pablo
+        private void Sjekk_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
