@@ -24,10 +24,13 @@ namespace GruppeoppgavexD
             ranNumber = newRan.Next(0, 39);
             LoadSpm(ranNumber);
             RanSpm();
+            radiobtns();
         }
 
         Random newRan = new Random();
         int ranNumber = 0;
+        string RanSpm1 = "";
+        string RanSpm2 = "";
         string riktigSvar = "";
         string[] svar = { "Island", "Norge", "Sverige", "Finland", "Russland", "Irland", "Storritannia"
                 , "Danmark", "Litauen", "latvia", "Estland", "Belgia", "Nederland", "Luxemburg", "Tyskland"
@@ -35,14 +38,14 @@ namespace GruppeoppgavexD
                 , "Ungaren", "Slovenia", "Kroatia", "Bosnia-Hercegovina", "Serbia", "Romania", "Moldova"
                 , "Bulgaria", "Macedonia", "Montenegro", "Albania", "Hellas", "Tyrkia", "Kypros", "Spania"
                 , "Portugal", "Italia"};
+
+
         private void LoadSpm(int spm)
         {
             Bildested.ImageLocation = Directory.GetCurrentDirectory() + @"\\Land\" + ranNumber + ".png";
             riktigSvar = svar[ranNumber];
 
         }
-        string RanSpm1 = "";
-        string RanSpm2 = "";
 
 
         // Eivind
