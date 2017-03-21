@@ -21,7 +21,7 @@ namespace GruppeoppgavexD
         private void Form1_Load(object sender, EventArgs e)
 
         {
-            ranNumber = newRan.Next(0, 39);
+            ranNumber = newRan.Next(0, 40);
             LoadSpm(ranNumber);
             RanSpm();
             radiobtns();
@@ -51,8 +51,8 @@ namespace GruppeoppgavexD
         // Eivind
         private void RanSpm()
         {
-            RanSpm1 = svar[newRan.Next(0, 39)];
-            RanSpm2 = svar[newRan.Next(0, 39)];
+            RanSpm1 = svar[newRan.Next(0, 40)];
+            RanSpm2 = svar[newRan.Next(0, 40)];
             if (RanSpm1 == riktigSvar || RanSpm2 == riktigSvar)
                 RanSpm();
         }
@@ -68,7 +68,7 @@ namespace GruppeoppgavexD
         //Vu
         private void radiobtns()
         {
-            switch (newRan.Next(0, 2))
+            switch (newRan.Next(0, 3))
             {
                 case 0:
                     {
