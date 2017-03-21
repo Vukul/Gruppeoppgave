@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GruppeoppgavexD
 {
@@ -25,24 +26,22 @@ namespace GruppeoppgavexD
             RanSpm(ranNumber);
         }
 
-    
-    Random newRan = new Random();
-    int ranNumber = 0;
-    string[] svar = { "Island", "Norge", "Sverige", "Finland", "Russland", "Irland", "Storritannia"
+        Random newRan = new Random();
+        int ranNumber = 0;
+        string riktigSvar = "";
+        string[] svar = { "Island", "Norge", "Sverige", "Finland", "Russland", "Irland", "Storritannia"
                 , "Danmark", "Litauen", "latvia", "Estland", "Belgia", "Nederland", "Luxemburg", "Tyskland"
                 , "Tjekkia", "Slovakia", "Polen", "Ukraina", "Hviterussland", "Frankrike", "Sveits", "Østerrike"
                 , "Ungaren", "Slovenia", "Kroatia", "Bosnia-Hercegovina", "Serbia", "Romania", "Moldova"
                 , "Bulgaria", "Macedonia", "Montenegro", "Albania", "Hellas", "Tyrkia", "Kypros", "Spania"
                 , "Portugal", "Italia"};
-
-    private void LoadSpm(int spm) {
-
-
+        private void LoadSpm(int spm) {
+            Bildested.ImageLocation = Directory.GetCurrentDirectory() + @"\\Land\" + ranNumber + ".png";
+            riktigSvar = svar[ranNumber];
     }
-    private void RanSpm(int spm) { }
-    private void Count() { }
-    private void Check() { }
-    private void radiobtns() { }
-
+        private void RanSpm(int spm) { }
+        private void Count() { }
+        private void Check() { }
+        private void radiobtns() { }
     }
 }
