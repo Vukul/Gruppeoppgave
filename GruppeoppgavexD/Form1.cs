@@ -39,9 +39,16 @@ namespace GruppeoppgavexD
             Bildested.ImageLocation = Directory.GetCurrentDirectory() + @"\\Land\" + ranNumber + ".png";
             riktigSvar = svar[ranNumber];
     }
-
+        string RanSpm1 = "";
+        string RanSpm2 = "";
         // Eivind
-    private void RanSpm(int spm) { }
+    private void RanSpm()
+        {
+            RanSpm1 = svar[newRan.Next(0, 39)];
+            RanSpm2 = svar[newRan.Next(0, 39)];
+            if (RanSpm1 == riktigSvar || RanSpm2 == riktigSvar)
+                RanSpm();
+        }
 
 
         // Pablo 
