@@ -29,6 +29,7 @@ namespace GruppeoppgavexD
 
         Random newRan = new Random();
         int ranNumber = 0;
+        int clicks = 0;
         string RanSpm1 = "";
         string RanSpm2 = "";
         string riktigSvar = "";
@@ -59,7 +60,15 @@ namespace GruppeoppgavexD
 
 
         // Pablo 
-        private void Count() { }
+        private void Count() {
+            clicks += 1;
+            if (clicks == 10)
+            {
+                if (MessageBox.Show("Gratulerer du er ferdig :)! Du fikk " totalPoeng.ToString()) == DialogResult.OK)
+                    Application.Exit();
+            }
+
+        }
 
 
         // Eivind
