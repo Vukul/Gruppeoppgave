@@ -65,7 +65,16 @@ namespace GruppeoppgavexD
         // Eivind
         private void Check()
         {
-           
+            foreach (RadioButton radio in groupBox1.Controls)
+            {
+                if (radio.Text == riktigSvar & radio.Checked == true)
+                {
+                    MessageBox.Show("Riktig svar");
+                    break;
+                }
+            }
+
+            MessageBox.Show("Feil svar");
         }
 
         //Vu
