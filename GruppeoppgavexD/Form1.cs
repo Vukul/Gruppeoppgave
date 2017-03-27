@@ -65,7 +65,7 @@ namespace GruppeoppgavexD
             clicks += 1;
             if (clicks == 10)
             {
-                if (MessageBox.Show("Gratulerer du er ferdig :)! Du fikk " totalPoeng.ToString()) == DialogResult.OK)
+                if (MessageBox.Show("Gratulerer du er ferdig :)! Du fikk " + totPoeng.ToString()) == DialogResult.OK)
                     Application.Exit();
             }
 
