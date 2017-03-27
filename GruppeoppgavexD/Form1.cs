@@ -65,7 +65,7 @@ namespace GruppeoppgavexD
             clicks += 1;
             if (clicks == 10)
             {
-                if (MessageBox.Show("Gratulerer du er ferdig :)! Du fikk " + totPoeng.ToString()) == DialogResult.OK)
+                if (MessageBox.Show("Gratulerer du er ferdig :)! Du fikk " + totPoeng.ToString() + " poeng!") == DialogResult.OK)
                     Application.Exit();
             }
 
@@ -120,13 +120,16 @@ namespace GruppeoppgavexD
         //Pablo
         private void Neste_Click(object sender, EventArgs e)
         {
-
+            ranNumber = newRan.Next(0, 40);
+            LoadSpm(ranNumber);
+            RanSpm();
+            radiobtns();
         }
 
         //Pablo
         private void Sjekk_Click(object sender, EventArgs e)
         {
-
+            Check();
         }
     }
 }
