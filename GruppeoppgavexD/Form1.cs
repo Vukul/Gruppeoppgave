@@ -29,6 +29,7 @@ namespace GruppeoppgavexD
 
         Random newRan = new Random();
         int ranNumber = 0;
+        int totPoeng = 0;
         string RanSpm1 = "";
         string RanSpm2 = "";
         string riktigSvar = "";
@@ -70,6 +71,7 @@ namespace GruppeoppgavexD
                 if (radio.Text == riktigSvar & radio.Checked == true)
                 {
                     MessageBox.Show("Riktig svar");
+                    totPoeng += 1;
                     break;
                 }
             }
