@@ -30,6 +30,7 @@ namespace GruppeoppgavexD
         Random newRan = new Random();
         int ranNumber = 0;
         int clicks = 0;
+        int totPoeng = 0;
         string RanSpm1 = "";
         string RanSpm2 = "";
         string riktigSvar = "";
@@ -72,7 +73,20 @@ namespace GruppeoppgavexD
 
 
         // Eivind
-        private void Check() { }
+        private void Check()
+        {
+            foreach (RadioButton radio in groupBox1.Controls)
+            {
+                if (radio.Text == riktigSvar & radio.Checked == true)
+                {
+                    MessageBox.Show("Riktig svar");
+                    totPoeng += 1;
+                    break;
+                }
+            }
+
+            MessageBox.Show("Feil svar");
+        }
 
         //Vu
         private void radiobtns()

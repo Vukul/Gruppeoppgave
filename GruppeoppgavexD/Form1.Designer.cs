@@ -68,6 +68,8 @@
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.groupBox1.Size = new System.Drawing.Size(768, 1023);
             this.groupBox1.TabIndex = 1;
+            this.groupBox1.Size = new System.Drawing.Size(432, 660);
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // label2
@@ -78,6 +80,9 @@
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(358, 39);
+            this.label2.Location = new System.Drawing.Point(6, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(215, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Hvilket land er dette?";
             // 
@@ -88,6 +93,9 @@
             this.Sjekk.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Sjekk.Name = "Sjekk";
             this.Sjekk.Size = new System.Drawing.Size(249, 76);
+            this.Sjekk.Location = new System.Drawing.Point(108, 508);
+            this.Sjekk.Name = "Sjekk";
+            this.Sjekk.Size = new System.Drawing.Size(140, 49);
             this.Sjekk.TabIndex = 5;
             this.Sjekk.Text = "Sjekk svar";
             this.Sjekk.UseVisualStyleBackColor = true;
@@ -100,6 +108,10 @@
             this.Neste.Name = "Neste";
             this.Neste.Size = new System.Drawing.Size(249, 76);
             this.Neste.TabIndex = 4;
+            this.Neste.Location = new System.Drawing.Point(108, 440);
+            this.Neste.Name = "Neste";
+            this.Neste.Size = new System.Drawing.Size(140, 49);
+            this.Neste.TabIndex = 1;
             this.Neste.Text = "Neste";
             this.Neste.UseVisualStyleBackColor = true;
             // 
@@ -123,6 +135,9 @@
             this.Alt2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Alt2.Name = "Alt2";
             this.Alt2.Size = new System.Drawing.Size(33, 32);
+            this.Alt2.Location = new System.Drawing.Point(11, 147);
+            this.Alt2.Name = "Alt2";
+            this.Alt2.Size = new System.Drawing.Size(21, 20);
             this.Alt2.TabIndex = 2;
             this.Alt2.TabStop = true;
             this.Alt2.UseVisualStyleBackColor = true;
@@ -136,6 +151,10 @@
             this.Alt1.Name = "Alt1";
             this.Alt1.Size = new System.Drawing.Size(33, 32);
             this.Alt1.TabIndex = 1;
+            this.Alt1.Location = new System.Drawing.Point(11, 103);
+            this.Alt1.Name = "Alt1";
+            this.Alt1.Size = new System.Drawing.Size(21, 20);
+            this.Alt1.TabIndex = 2;
             this.Alt1.TabStop = true;
             this.Alt1.UseVisualStyleBackColor = true;
             // 
@@ -147,6 +166,9 @@
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(199, 39);
+            this.label1.Location = new System.Drawing.Point(6, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Spørsmål 1";
             // 
@@ -158,6 +180,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Bildested);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
