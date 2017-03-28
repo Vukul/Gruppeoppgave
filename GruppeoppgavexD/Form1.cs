@@ -75,17 +75,25 @@ namespace GruppeoppgavexD
         // Eivind
         private void Check()
         {
-            foreach (RadioButton radio in groupBox1.Controls)
+            foreach (Control parent in groupBox1.Controls)
             {
-                if (radio.Text == riktigSvar & radio.Checked == true)
+                Panel panel = parent as Panel;
+                if (panel!= null)
                 {
-                    MessageBox.Show("Riktig svar");
-                    totPoeng += 1;
-                    break;
+                    foreach (Control child in panel.Controls)
+                    {
+                        RadioButton radio = child as RadioButton;
+                        if (radio != null)
+                        {
+                            if (radio.Text == riktigSvar & radio.Checked == true)
+                            {
+                                MessageBox.Show("Riktig svar");
+                                totPoeng += 1;
+                            }
+                        }
+                    }
                 }
             }
-
-            MessageBox.Show("Feil svar");
         }
 
         //Vu
@@ -117,16 +125,15 @@ namespace GruppeoppgavexD
             }
         }
 
-        //Pablo
         private void Neste_Click(object sender, EventArgs e)
         {
+            Count();
             ranNumber = newRan.Next(0, 40);
             LoadSpm(ranNumber);
             RanSpm();
             radiobtns();
         }
 
-        //Pablo
         private void Sjekk_Click(object sender, EventArgs e)
         {
             Check();
