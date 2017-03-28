@@ -31,6 +31,7 @@ namespace GruppeoppgavexD
         int ranNumber = 0;
         int clicks = 0;
         int totPoeng = 0;
+        int spmCount = 1;
         string RanSpm1 = "";
         string RanSpm2 = "";
         string riktigSvar = "";
@@ -132,11 +133,15 @@ namespace GruppeoppgavexD
             LoadSpm(ranNumber);
             RanSpm();
             radiobtns();
+            spmCount += 1;
+            label1.Text = "Spørsmål " + spmCount;
+            Sjekk.Enabled = true;
         }
 
         private void Sjekk_Click(object sender, EventArgs e)
         {
             Check();
+            Sjekk.Enabled = false;
         }
     }
 }
