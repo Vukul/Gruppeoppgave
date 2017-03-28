@@ -35,7 +35,7 @@ namespace GruppeoppgavexD
         string RanSpm1 = "";
         string RanSpm2 = "";
         string riktigSvar = "";
-        string[] svar = { "Island", "Norge", "Sverige", "Finland", "Russland", "Irland", "Storritannia"
+        string[] svar = { "Island", "Norge", "Sverige", "Finland", "Russland", "Irland", "Storbritannia"
                 , "Danmark", "Litauen", "latvia", "Estland", "Belgia", "Nederland", "Luxemburg", "Tyskland"
                 , "Tjekkia", "Slovakia", "Polen", "Ukraina", "Hviterussland", "Frankrike", "Sveits", "Østerrike"
                 , "Ungaren", "Slovenia", "Kroatia", "Bosnia-Hercegovina", "Serbia", "Romania", "Moldova"
@@ -76,6 +76,7 @@ namespace GruppeoppgavexD
         // Eivind
         private void Check()
         {
+            bool stopp = false;
             foreach (Control parent in groupBox1.Controls)
             {
                 Panel panel = parent as Panel;
@@ -90,8 +91,17 @@ namespace GruppeoppgavexD
                             {
                                 MessageBox.Show("Riktig svar");
                                 totPoeng += 1;
-                            }
+                                stopp = true;
+                            }                            
                         }
+                    }
+                    if (stopp == true)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Feil svar");
                     }
                 }
             }
