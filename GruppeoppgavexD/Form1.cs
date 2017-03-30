@@ -32,6 +32,7 @@ namespace GruppeoppgavexD
         int clicks = 0;
         int totPoeng = 0;
         int spmCount = 1;
+        bool spmResultat = false;
         string RanSpm1 = "";
         string RanSpm2 = "";
         string riktigSvar = "";
@@ -89,20 +90,15 @@ namespace GruppeoppgavexD
                         {
                             if (radio.Text == riktigSvar & radio.Checked == true)
                             {
-                                MessageBox.Show("Riktig svar");
-                                totPoeng += 1;
+                                spmResultat = true;
                                 stopp = true;
-                            }                            
+                            }                           
                         }
                     }
                     if (stopp == true)
                     {
                         break;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Feil svar");
-                    }
+                    }                
                 }
             }
         }
@@ -138,6 +134,12 @@ namespace GruppeoppgavexD
 
         private void Neste_Click(object sender, EventArgs e)
         {
+            Check();
+            if (spmResultat == true)
+            {
+                totPoeng += 1;
+                spmResultat = false;
+            }
             Count();
             ranNumber = newRan.Next(0, 40);
             LoadSpm(ranNumber);
@@ -146,12 +148,21 @@ namespace GruppeoppgavexD
             spmCount += 1;
             label1.Text = "Spørsmål " + spmCount;
             Sjekk.Enabled = true;
+
         }
 
         private void Sjekk_Click(object sender, EventArgs e)
         {
             Check();
             Sjekk.Enabled = false;
+            if (spmResultat == true)
+            {
+                MessageBox.Show("Riktig svar");
+            }
+            else
+            {
+                MessageBox.Show("Feil svar");
+            }
         }
     }
 }
