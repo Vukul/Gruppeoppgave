@@ -43,7 +43,7 @@ namespace GruppeoppgavexD
                 , "Bulgaria", "Macedonia", "Montenegro", "Albania", "Hellas", "Tyrkia", "Kypros", "Spania"
                 , "Portugal", "Italia"};
 
-
+        //Vu
         private void LoadSpm(int spm)
         {
             Bildested.ImageLocation = Directory.GetCurrentDirectory() + @"\\Land\" + ranNumber + ".png";
@@ -53,6 +53,8 @@ namespace GruppeoppgavexD
 
 
         // Eivind
+        // Trekker et tilfeldig svar fra alle 39 svarene i de to andre radiobuttons, og setter navnet til det
+        // Dersom et av de to tilfeldige skulle være det samme som det riktige svaret, kjøres den om igjen til alle er forskjellige
         private void RanSpm()
         {
             RanSpm1 = svar[newRan.Next(0, 40)];
@@ -62,7 +64,7 @@ namespace GruppeoppgavexD
         }
 
 
-        // Pablo 
+        // Pål 
         private void Count() {
             clicks += 1;
             if (clicks == 10)
@@ -75,6 +77,13 @@ namespace GruppeoppgavexD
 
 
         // Eivind
+        // Setter en privat bool stopp til false slik at jeg kan bruke denne senere og gjøre den true
+        // Sjekker for alle Control (som i dette tilfellet er radiobuttons) i groupbox1 om de er der, 
+        // og i så fall starte check funksjonen
+        // Check funksjonen sjekker om den valgte boksens tekst er riktig i forhold til det riktige svaret til bilde
+        // Dersom den er riktig setter jeg bool'en stopp til true og kan her bruke den til å stoppe hele prosessen
+        // slik at det hele ikke starter på nytt
+      
         private void Check()
         {
             bool stopp = false;
@@ -131,7 +140,7 @@ namespace GruppeoppgavexD
                     }
             }
         }
-
+        //Pål
         private void Neste_Click(object sender, EventArgs e)
         {
             Check();
@@ -150,7 +159,7 @@ namespace GruppeoppgavexD
             Sjekk.Enabled = true;
 
         }
-
+        //Pål
         private void Sjekk_Click(object sender, EventArgs e)
         {
             Check();
@@ -163,6 +172,6 @@ namespace GruppeoppgavexD
             {
                 MessageBox.Show("Feil svar");
             }
-        }
+        }       
     }
 }
